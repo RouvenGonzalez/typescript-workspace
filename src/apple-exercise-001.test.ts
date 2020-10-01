@@ -6,7 +6,7 @@ describe('test sortFruits()', () => {
     const basket1 = [Fruit.Pear, Fruit.Apple, Fruit.Pear, Fruit.Apple];
     const basket2 = [Fruit.Pear, Fruit.Apple, Fruit.Pear, Fruit.Apple];
 
-    // output
+    // expected output
     const result = [
       [Fruit.Apple, Fruit.Apple, Fruit.Apple, Fruit.Apple],
       [Fruit.Pear, Fruit.Pear, Fruit.Pear, Fruit.Pear],
