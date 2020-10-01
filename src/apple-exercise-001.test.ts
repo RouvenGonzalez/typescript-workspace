@@ -14,4 +14,18 @@ describe('test sortFruits()', () => {
 
     expect(sortFruits(basket1, basket2)).toEqual(result);
   });
+
+  it('sort two arrays of Fruits and empty ', () => {
+    // test data
+    const basket1 = [Fruit.Pear, Fruit.Apple, Fruit.Pear, Fruit.Apple];
+    const basket2 = [];
+
+    // expected output
+    const result = [
+      [Fruit.Apple, Fruit.Apple],
+      [Fruit.Pear, Fruit.Pear],
+    ];
+
+    expect(sortFruits(basket1, basket2)).toEqual(result);
+  });
 });
